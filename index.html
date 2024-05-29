@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Art Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+      canvas {
+        display: block;
+      }
+      @media (max-width: 600px) {
+        canvas {
+          width: 100vw;
+          height: 100vh;
+        }
+      }
+      .description {
+        position: absolute;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+      }
+      .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+      .menu a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="#https://github.com/zoharlaskov/2D-Minecraft-game.git"
+        >Project 1</a
+      >
+      <a href="#project2">Project 2</a>
+      <a href="#project3">Project 3</a>
+      <a href="#project4">Project 4</a>
+      <a href="#project5">Project 5</a>
+      <a href="#project6">Project 6</a>
+    </div>
+    <script
+      href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    ></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://threejs.org/examples/js/objects/Water2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./createProjectCube.js"></script>
+  </body>
+</html>
